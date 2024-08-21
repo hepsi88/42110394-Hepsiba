@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking System</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Flight Details</h1>
+        <form id="flightForm">
+            <label for="flightNo">Flight No:</label>
+            <input type="text" id="flightNo" name="flightNo" required>
+
+            <label for="flightName">Flight Name:</label>
+            <input type="text" id="flightName" name="flightName" required>
+
+            <label for="source">Source:</label>
+            <input type="text" id="source" name="source" required>
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="departureTime">Departure Time:</label>
+            <input type="datetime-local" id="departureTime" name="departureTime" required>
+
+            <label for="arrivalTime">Arrival Time:</label>
+            <input type="datetime-local" id="arrivalTime" name="arrivalTime" required>
+
+            <label for="duration">Duration (hrs):</label>
+            <input type="number" id="duration" name="duration" step="0.1" required>
+
+            <label for="cost">Cost ($):</label>
+            <input type="number" id="cost" name="cost" step="0.01" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>

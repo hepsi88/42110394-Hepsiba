@@ -1,0 +1,79 @@
+/* Use a flight-themed background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('back.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    color: #fff; /* Set default font color to white for better readability on background */
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.5); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+h1 {
+    text-align: center;
+    color: #007bff; /* Flight-themed color */
+    font-size: 2rem; /* Larger font size for emphasis */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #333; /* Dark color for labels for better readability */
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* White background for input fields */
+    color: #333; /* Dark color for text inside input fields */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+input[type="text"]:hover,
+input[type="datetime-local"]:hover,
+input[type="number"]:hover {
+    border-color: #007bff; /* Highlight border color on hover */
+    background-color: #f0f8ff; /* Slightly lighter background on hover */
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Add shadow effect on hover */
+}
+
+/* Ensure form elements are properly aligned */
+input,
+button {
+    box-sizing: border-box;
+}
